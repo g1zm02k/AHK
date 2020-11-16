@@ -13,9 +13,9 @@ CoC Backup.ahk - After hearing about Call of Cthulhu save corruption I made this
 GTAV.ahk - Made this to simplify swapping in/out SP Modding tools on the fly. Also utilised passed arguments.
 
 Keyfile.ahk - Imported special keybinds depending on what app/game is running - current use version.
-Keyfile All.ahk - Complete set of all used keybinds of the above.
+Keyfile All.ahk - Complete set of all previous/current keybinds from the above.
 
 ProFontWindows.ttf - Monospaced font used in some of my code.
 About ProFont Distribution 2.2.txt
 
-nircmd.exe - Handy set of useful cammands I sometimes use in my scripts. Credit to NirSoft (http://www.nirsoft.net/utils/nircmd.html)
+nircmd.exe - Handy set of useful commands I sometimes use in my scripts. Credit to NirSoft (http://www.nirsoft.net/utils/nircmd.html)

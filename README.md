@@ -15,6 +15,10 @@ GTAV.ahk - Made this to simplify swapping in/out SP Modding tools on the fly. Al
 Keyfile.ahk - Imported special keybinds depending on what app/game is running - current use version.
 Keyfile All.ahk - Complete set of all previous/current keybinds from the above.
 
+XI.ahk - Heavily modified version of the XInput code. Credit to lexikos (https://www.autohotkey.com/boards/viewtopic.php?t=29659)
+XI_Controls - Wrapper for XI.ahk based on a wrapper for Destiny. Credit to u/slicer4ever (https://www.reddit.com/r/DestinyTechSupport/comments/9f37n0/pchow_to_do_controller_mouse_setupsnot_xim/)
+xinput1_4.dll - Used with XI.ahk, just in case there's an OS without at least one version...
+
 ProFontWindows.ttf - Monospaced font used in some of my code.
 About ProFont Distribution 2.2.txt
 

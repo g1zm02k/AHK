@@ -6,7 +6,7 @@ SetBatchLines -1
 SendMode Input
 Gui OSD:New,+AlwaysOnTop +ToolWindow
 Gui Font,s9,Consolas
-WPX:=883,WPY:=456
+WPX:=900,WPY:=500
 Gui Add,Edit,x-2 y-2 w1900 h154 vTXT ReadOnly VScroll,Clipboard Empty...
 Gui Show,NoActivate x%WPX% y%WPY% w150 h140,Preview:
 WinSet Transparent,200,Preview:
@@ -19,19 +19,15 @@ Loop 99
 Return
 
 ; ### Controls Toggle Preview/Quit ###
-F1::
-	WinGetPos,WGX,WGY,,,Preview:
-	SD(WGX "," WGY,0)
-Return
 !F1::Gui % (TOG:=!TOG)?"OSD:Hide":"OSD:Show",NoActivate
 ^Esc::
 OSDGuiClose:
-	WinGetPos,WGX,WGY,,,Preview:
-	FileCopy % A_ScriptName,% A_ScriptName ".bak"
-	FileRead TMP,% A_ScriptName
-	TMP:=RegExReplace(TMP,"`am)^WPX:=.*$","WPX:=" WGX ",WPY:=" WGY)
-	FileDelete % A_ScriptName
-	FileAppend % TMP,% A_ScriptName
+  WinGetPos,WGX,WGY,,,Preview:
+  FileCopy % A_ScriptName,% A_ScriptName ".bak"
+  FileRead TMP,% A_ScriptName
+  TMP:=RegExReplace(TMP,"`am)^WPX:=.*$","WPX:=" WGX ",WPY:=" WGY)
+  FileDelete % A_ScriptName
+  FileAppend % TMP,% A_ScriptName
   ExitApp
 
 ; ### Process Clipboard ###

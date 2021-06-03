@@ -19,8 +19,8 @@ Loop 99
 Return
 
 ; ### Controls Toggle Preview/Quit ###
-!F1::Gui % (TOG:=!TOG)?"OSD:Hide":"OSD:Show",NoActivate
-^Esc::
+^F1::Gui % (TOG:=!TOG)?"OSD:Hide":"OSD:Show",NoActivate   ;Ctrl+F1
+^Esc::                                                    ;Ctrl+Esc
 OSDGuiClose:
   WinGetPos,WGX,WGY,,,Preview:
   FileCopy % A_ScriptName,% A_ScriptName ".bak"

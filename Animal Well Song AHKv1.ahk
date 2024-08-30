@@ -1,11 +1,11 @@
 ﻿#Requires AutoHotkey >=1.1 <2.0
 #SingleInstance Force
 
-^+s::DoSong("6313631364246424" ;Egg
+^+s::DoSong("6313631364246424"  ; Ctrl+Shift+s (Egg)
           . "8535853575257525"
           . "6313631364246424"
           . "6864875376457656")
-^+h::DoSong("11553377")  ;Heads/Hub
+^+h::DoSong("11553377")         ; Ctrl+Shift+h (Hub/Heads)
 
 DoSong(Tune){
   Loop Parse,% Tune
